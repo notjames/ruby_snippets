@@ -8,7 +8,7 @@
 # Future: option to make each key a symbol.
 
 class String
-    def dot_to_h
+    def dot_to_h(options = {})
         hoh = {}
 
         unless self.nil? or self == '' or self.scan(/\./).count == 0
@@ -17,7 +17,7 @@ class String
             key_ary.reverse.each \
             {|k|
                 hoh.empty? ?  hoh = {k => {}} : hoh = {k => hoh}
-            }   
+            }
        end 
 
        hoh 
