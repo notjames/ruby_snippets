@@ -1,0 +1,25 @@
+# Author: Jim Conner
+# Purpose: turn a dotted string into an empty hash-of-hashes
+# Example:
+# thils.is.a.test
+# becomes
+# hoh = {'this' => { 'is' => { 'a' => { 'test' => {}}}}}
+# 
+# Future: option to make each key a symbol.
+
+class String
+    def dot_to_h
+        hoh = {}
+
+        unless self.nil? or self == '' or self.scan(/\./).count == 0
+            key_ary = self.split(/\./)
+
+            key_ary.reverse.each \
+            {|k|
+                hoh.empty? ?  hoh = {k => {}} : hoh = {k => hoh}
+            }   
+       end 
+
+       hoh 
+    end 
+end
