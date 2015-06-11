@@ -1,7 +1,7 @@
 # Author: Jim Conner
 # Purpose: turn a dotted string into an empty hash-of-hashes
 # Example:
-# thils.is.a.test
+# this.is.a.test
 # becomes
 # hoh = {'this' => { 'is' => { 'a' => { 'test' => {}}}}}
 # 
