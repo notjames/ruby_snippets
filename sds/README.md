@@ -27,6 +27,33 @@ Rules and Properties of Nodes include:
 
 Note that the script currently only satisfies the assignment as it is stated, no more as yet.
 
+## Rules to follow
+Write a Node class that includes the following: 
+- A constructor that takes a name and weight as input 
+    Example Constructor:  Node root = new Node(String Name, Int Weight)  
+
+- Include any methods you need.  
+
+- Write unit tests. 
+
+Write a Controller class that includes the following:  
+- A constructor that takes a root node as input. 
+    Example Constructor:  Controller controller = new Controller(Node rootNode)  
+    
+- An insert(name, weight) method returns true when insertion was successful and false when not.   
+  For example input:output given `Root(aRoot, 5)`:   
+  
+      controller.insert(aNode,1): true 
+      controller.insert(bNode,5): false 
+      controller.insert(aNode, 6): false 
+
+- A printOrderedNames() method that returns a list, space separated of names in order of weight from smallest to largest.  
+  For example (from the previous example): 
+
+     controller.printOrderedNames(): aNode aRoot
+ 
+- Write unit tests.
+
 ## Tests
 
 To run the test suite, simply run the command **rake** from your `/path/to/sds`
