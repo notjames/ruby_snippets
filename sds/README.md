@@ -2,7 +2,9 @@
 
 Simply run it from the command line. IE ./btree
 
-**This script requires Ruby ~> 2.0.0**
+**This script requires the following:
+
+Ruby ~> 2.0.0**
 
 ## Motivation
 
