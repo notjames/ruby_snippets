@@ -1,11 +1,10 @@
 ## Synopsis
 
-**This script requires the following to run:
+This script requires the following to run:
 
-Ruby ~> 2.3.0
-minitest ~> 5.10.0
-minitest-reporters ~> 1.1.14
-**
+    Ruby ~> 2.3.0
+    minitest ~> 5.10.0
+    minitest-reporters ~> 1.1.14
 
 Simply run `btree-sds` from the command line. IE ./btree-sds
 Do note that this particular script is meant to run the use-cases outlined in the assignment.
