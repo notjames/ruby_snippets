@@ -4,7 +4,26 @@ require 'ap'
 require 'btree'
 require "minitest/autorun"
 
+#task :default => [:test_deps, :test]
 task :default => :test
+
+# Unfamiliar with how to do this atm.
+# XXX leave for future endeavor if it's wise.
+#task :test_deps do
+#  deps =  File.read(File.join(__dir__,'Gemfile'))
+#              .chomp
+#              .tr('"','')
+#              .tr(',','')
+#              .split(/\n/)
+#              .grep(/^gem/)
+#              .map\
+#              {|l|
+#                l.gsub('gem ','')
+#              }
+#  ap deps
+#  deps.each{|d| puts 'install %s' % [d]; gem install d}
+#end
+
 task :test do
   Dir.glob("**/test*.rb") { |f| require_relative(f) }
 end

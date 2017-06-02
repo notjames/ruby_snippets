@@ -1,14 +1,21 @@
 ## Synopsis
 
-Simply run it from the command line. IE ./btree
+**This script requires the following to run:
 
-**This script requires the following:
+Ruby ~> 2.3.0
+minitest ~> 5.10.0
+minitest-reporters ~> 1.1.14
+**
 
-Ruby ~> 2.0.0**
+Simply run `btree-sds` from the command line. IE ./btree-sds
+Do note that this particular script is meant to run the use-cases outlined in the assignment.
+
+There exists another test script used during the authoring of this beast and it is located
+in the scripts directory named `deeper_concept`.
 
 ## Motivation
 
-This script is my first attempt at writing a btree class driven by a controller that manages the binary tree nodes. The following were the guidelines I was required to follow:
+This library is my first attempt at writing a btree class driven by a controller that manages the binary tree nodes. The following were the guidelines I was required to follow:
 
 Rules and Properties of Nodes include:  
 
@@ -23,7 +30,7 @@ Note that the script currently only satisfies the assignment as it is stated, no
 
 ## Tests
 
-Describe and show how to run the tests with code examples.
+To run the test suite, simply run the command **rake** from your `/path/to/sds`
 
 ## Contributors
 
@@ -31,4 +38,4 @@ Jim Conner (snafuxnj@yahoo.com)
 
 ## License
 
-MIT
+MIT?

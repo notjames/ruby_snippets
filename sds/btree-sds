@@ -3,29 +3,12 @@
 
 $: << File.join(__dir__,'lib')
 
-require 'ap'
 require 'btree'
 
 node       = Node.new('aRoot', 5)
 controller = Controller.new(node)
-Controller.new(node).insert('aNode', 1)
-Controller.new(node).insert('aNode', 1)
-Controller.new(node).insert('aNode', 1)
-Controller.new(node).insert('aNode', 1)
-Controller.new(node).insert('aNode', 1)
-Controller.new(node).insert('aNode', 1)
-exit
-controller.insert('1hopl',4)
-controller.insert('1hopr',6)
 controller.insert('aNode',1)
-controller.insert('pNode',16)
-controller.insert('dNode',8)
-controller.insert('fooNode',3)
+controller.insert('bNode',5)
+controller.insert('aNode',6)
 
-controller.weight_exists? node,4
-controller.weight_exists? node,6
-controller.weight_exists? node,1
-controller.weight_exists? node,16
-controller.weight_exists? node,8
-controller.weight_exists? node,3
 controller.printOrderedNames
