@@ -1,0 +1,10 @@
+$: << File.join(File.dirname(__FILE__),'lib')
+
+require 'ap'
+require 'btree'
+require "minitest/autorun"
+
+task :default => :test
+task :test do
+  Dir.glob("**/test*.rb") { |f| require_relative(f) }
+end
