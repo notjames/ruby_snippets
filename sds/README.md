@@ -50,7 +50,7 @@ Write a Controller class that includes the following:
 - A printOrderedNames() method that returns a list, space separated of names in order of weight from smallest to largest.  
   For example (from the previous example): 
 
-     controller.printOrderedNames(): aNode aRoot
+      controller.printOrderedNames(): aNode aRoot
  
 - Write unit tests.
 
