@@ -1,16 +1,19 @@
 ## Synopsis
 
-This script requires the following to run:
+Simply run `btree-sds` from the command line. IE `./btree-sds`
+
+This package does **NOT** have an installer. Also note that this particular script is meant to run the use-cases outlined in the assignment (see *Rules to Follow*).
+
+There exists another test script used during the authoring of this beast and it is located
+in the scripts directory named `deeper_concept`.
+
+## Dependency Requirements
+
+This script requires the following to be tested and run:
 
     Ruby ~> 2.3.0
     minitest ~> 5.10.0
     minitest-reporters ~> 1.1.14
-
-Simply run `btree-sds` from the command line. IE ./btree-sds
-Do note that this particular script is meant to run the use-cases outlined in the assignment.
-
-There exists another test script used during the authoring of this beast and it is located
-in the scripts directory named `deeper_concept`.
 
 ## Motivation
 
